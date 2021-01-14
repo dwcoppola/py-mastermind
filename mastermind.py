@@ -3,7 +3,7 @@
 from random import random
 from random import shuffle
 
-def code_generator(colors, blanks, dupes):
+def get_code(colors, blanks, dupes):
     rand = 6
     color_list = ["red", "yellow", "green", "blue", "black", "white"]
     shuffle(color_list)
@@ -32,5 +32,8 @@ def code_generator(colors, blanks, dupes):
                 new_list.append(color)
     return new_list
 
+def victory_fanfare():
+    print("You win")
+
 def analyze_guess(code, guess):
-    pass
+    feedback = []
